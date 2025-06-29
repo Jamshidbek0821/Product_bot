@@ -45,7 +45,7 @@ function handleOrder(id) {
          elModalInner.innerHTML = `
         <div class="md:flex items-center gap-[30px]">
             <img class="flex items-center md:items-start h-[250px] md:h-[400px] w-[250px] md:w-[300px]  mx-auto mb-[5px]" src="${res.data.image}" alt="" width="300" height="300"/>
-            <div class="md:w-[300px] md:pt-[20px]">
+            <div class="md:w-[300px] pt-[20px]">
                 <h2 class="font-bold text-[20px] line-clamp-1 mb-2">${res.data.title}</h2>
                 <p class="line-clamp-3 mb-1">${res.data.description}</p>
                 <strong class="text-[20px] mb-2 inline-block">${res.data.price} $</strong>
