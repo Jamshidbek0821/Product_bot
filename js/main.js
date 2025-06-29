@@ -44,7 +44,7 @@ function handleOrder(id) {
     axios(`${api}/${id}`).then(res => {
          elModalInner.innerHTML = `
         <div class="md:flex items-center gap-[30px]">
-            <img class="flex md:pb-[30px] items-center md:items-start h-[250px] md:h-[500px] w-[250px] md:w-[300px]  mx-auto mb-[5px]" src="${res.data.image}" alt="" width="300" height="300"/>
+            <img class="flex md:pb-[30px] items-center md:items-start h-[250px] md:h-[400px] w-[250px] md:w-[300px]  mx-auto mb-[5px]" src="${res.data.image}" alt="" width="300" height="300"/>
             <div class="md:w-[300px]">
                 <h2 class="font-bold text-[20px] line-clamp-1 mb-2">${res.data.title}</h2>
                 <p class="line-clamp-3 mb-1">${res.data.description}</p>
