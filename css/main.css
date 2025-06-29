@@ -1,7 +1,6 @@
 body {
-/* Man of Steel Gradient */
-/* Disco Gradient */
-background: #4ECDC4, #556270;
-background: -webkit-linear-gradient(90deg, #4ECDC4, #556270);
-background: linear-gradient(90deg, #4ECDC4, #556270);
+/* MegaTron Gradient */
+background: #C6FFDD, #FBD786, #f7797d;
+background: -webkit-linear-gradient(90deg, #C6FFDD, #FBD786, #f7797d);
+background: linear-gradient(90deg, #C6FFDD, #FBD786, #f7797d);
 }
