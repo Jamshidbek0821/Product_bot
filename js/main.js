@@ -49,9 +49,9 @@ function handleOrder(id) {
                 <h2 class="font-bold text-[20px] line-clamp-1 mb-2">${res.data.title}</h2>
                 <p class="line-clamp-3 mb-1">${res.data.description}</p>
                 <strong class="text-[20px] mb-2 inline-block">${res.data.price} $</strong>
-                <form class="space-y-3 pt-[20px] add-form" autocomplete="off">
-                    <input required class="p-2 rounded-md outline-none shadow-md w-full border-[1px]" name="phone" type="tel" placeholder="Enter your name">
-                    <input required class="p-2 rounded-md outline-none shadow-md w-full border-[1px]" name="name" type="text" placeholder="Enter your phone number">
+                <form class="space-y-3 lg:pt-[20px] add-form" autocomplete="off">
+                    <input required class="p-2 rounded-md outline-none shadow-md w-full border-[1px]" name="name" type="tel" placeholder="Enter your name">
+                    <input required class="p-2 rounded-md outline-none shadow-md w-full border-[1px]" name="phone" type="text" placeholder="Enter your phone number">
                     <input required class="p-2 rounded-md outline-none shadow-md w-full border-[1px]" name="address" type="text" placeholder="Enter your address">
                     <button type="submit" class="w-full bg-green-700 text-white font-semibold p-2 rounded-md cursor-pointer hover:scale-[1.02] duration-300">Order</button>
                     </form>
