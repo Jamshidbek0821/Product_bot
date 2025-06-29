@@ -1,0 +1,7 @@
+body {
+/* Man of Steel Gradient */
+/* Disco Gradient */
+background: #4ECDC4, #556270;
+background: -webkit-linear-gradient(90deg, #4ECDC4, #556270);
+background: linear-gradient(90deg, #4ECDC4, #556270);
+}
