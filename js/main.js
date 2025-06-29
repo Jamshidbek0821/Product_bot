@@ -24,7 +24,7 @@ function rendrerProducts(arr, list) {
         let elItem = document.createElement("li")
         elItem.className = " w-[300px] rounded-md overflow-hidden p-3 bg-white shadow-md"
         elItem.innerHTML = `
-             <img class="h-[250px] mx-auto mb-3" src="${item.image}" alt="Product img" />
+             <img class="h-[250px] md:h-[250px] mx-auto mb-3" src="${item.image}" alt="Product img" />
              <h2 class="font-bold text-[20px] line-clamp-1 mb-2">${item.title}</h2>
              <p class="line-clamp-3 mb-1">${item.description}</p>
              <strong class="text-[20px] mb-2 inline-block">${item.price} $</strong>
@@ -43,9 +43,9 @@ function handleOrder(id) {
     elModalInner.innerHTML = "Loading..."
     axios(`${api}/${id}`).then(res => {
          elModalInner.innerHTML = `
-        <div class="flex gap-[30px]">
-            <img class="w-[300px] h-[400px]" src="${res.data.image}" alt="" width="300" height="300"/>
-            <div class="w-[300px]">
+        <div class="md:flex items-center gap-[30px]">
+            <img class="flex items-center md:items-start h-[250px] md:h-[400px] w-[250px] md:w-[300px]  mx-auto mb-[5px]" src="${res.data.image}" alt="" width="300" height="300"/>
+            <div class="md:w-[300px]">
                 <h2 class="font-bold text-[20px] line-clamp-1 mb-2">${res.data.title}</h2>
                 <p class="line-clamp-3 mb-1">${res.data.description}</p>
                 <strong class="text-[20px] mb-2 inline-block">${res.data.price} $</strong>
